@@ -30,23 +30,18 @@ public class MainActivity extends AppCompatActivity {
         group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int id) {
-                switch(id){
-                    case (R.id.red):
-                        main.setBackgroundColor(Color.RED);
-                        break;
-                    case (R.id.yellow):
-                        main.setBackgroundColor(Color.YELLOW);
-                        break;
-                    case (R.id.green):
-                        main.setBackgroundColor(Color.GREEN);
-                        break;
-                    case (R.id.blue):
-                        main.setBackgroundColor(Color.BLUE);
-                        break;
+                if(R.id.red==id){
+                    main.setBackgroundColor(Color.RED);
                 }
+                else if (R.id.green==id){
+                    main.setBackgroundColor(Color.GREEN);
+                }
+                else if (R.id.yellow==id){
+                    main.setBackgroundColor(Color.YELLOW);
+                }
+                else if (R.id.blue==id){
+                    main.setBackgroundColor(Color.BLUE);
             }
-        });
-
-
-    }
+        }}
+        );}
 }
