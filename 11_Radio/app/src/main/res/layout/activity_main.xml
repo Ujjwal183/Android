@@ -53,7 +53,5 @@
             android:text="BLUE"
             android:textSize="20dp"
             />
-
     </RadioGroup>
-
 </RelativeLayout>

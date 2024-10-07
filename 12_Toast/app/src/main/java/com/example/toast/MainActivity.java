@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 count++;
-                Toast.makeText(getApplicationContext(),count,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Count : "+count,Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -33,12 +33,13 @@ public class MainActivity extends AppCompatActivity {
         input1 = findViewById(R.id.input1);
         input2 = findViewById(R.id.input2);
         result = findViewById(R.id.result);
-        int value1 = Integer.parseInt(input1.getText().toString());
-        int value2 = Integer.parseInt(input2.getText().toString());
+
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int value1 = Integer.parseInt(input1.getText().toString());
+                int value2 = Integer.parseInt(input2.getText().toString());
                 int res = value1+value2;
                 result.setText(String.valueOf(res));
             }
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int value1 = Integer.parseInt(input1.getText().toString());
+                int value2 = Integer.parseInt(input2.getText().toString());
                 int res = value1-value2;
                 result.setText(String.valueOf(res));
             }
@@ -53,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         mul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int value1 = Integer.parseInt(input1.getText().toString());
+                int value2 = Integer.parseInt(input2.getText().toString());
                 int res = value1*value2;
                 result.setText(String.valueOf(res));
             }
@@ -60,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         div.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int value1 = Integer.parseInt(input1.getText().toString());
+                int value2 = Integer.parseInt(input2.getText().toString());
                 float res = value1/value2;
                 result.setText(String.valueOf(res));
             }
